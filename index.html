@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Gallery - Sahil</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    
+
+    body {
+      background-image: url('images/background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+
+
+    .glass-wrapper {
+      min-height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+      backdrop-filter: blur(10px);
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      background-color: rgba(27, 22, 99, 0.8);
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .video-card {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px; /* Narrower width for vertical look */
+  height: 480px; /* Optional fixed height */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain vertica l video fill */
+  border-radius: 15px;
+  aspect-ratio: 9/16; /* Ensures vertical shape */
+}
+
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-wrapper">
+    <div class="header">sahil</div>
+
+    <div class="video-container">
+      <div class="video-card">
+        <video controls>
+          <source src="videos/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>video 1</p>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="videos/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>video 2</p>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>video 3</p>
+      </div>
+    </div>
+
+    <br><br>
+
+   
+
+    <footer>
+      This is all video editing sample which I edited using VN and CapCut (on low-end device: Oppo A5 and i3 processor laptop)
+    </footer>
+  </div>
+</body>
+</html>
